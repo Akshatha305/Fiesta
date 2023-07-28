@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #FFEECC;
+      color: white;
+    }
+
+    .container1 {
+      text-align: center;
+    }
+
+    .title{
+      color: #19282F;
+    }
+    .h44{
+      color: #19282F;
+    }
+
+    h1 {
+      font-weight: 100;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    }
+
+    h4 {
+      font-weight: 100;
+      color: #19282F;
+    }
+
+    .container2 {
+      width: 750px;
+      text-align: center;
+    }
+
+    .container3 {
+      width: 700px;
+      right: 0px;
+      position: absolute;
+      margin-right: 3%;
+
+    }
+
+    .container4 {
+      display: inline-flex;
+    }
+
+
+    .navbar-brand {
+      font-family: 'Tangerine', serif;
+      font-size: 50px;
+      height: 50px;
+      color: white;
+      bottom: 4px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" style="background-color: #19282F ;">
+
+    <a class="navbar-brand" style="color: #FFEECC;">Fiesta</a>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="firstpg.html" style="color: #FFEECC;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about_us.html" style="color: #FFEECC">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="booking.html" style="color: #FFEECC">Booking</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html" style="color: #FFEECC">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="testimonials.html" style="color: #FFEECC">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="color: #FFEECC">Login</a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+
+  <br><br><br>
+  <div class="container4" style="width: 50%;">
+    <div class="container2"><br><br><br><br><br><br>
+      <h2 class="title">Lets get started</h2><br>
+      <h4>Our studio:</h4>
+      <h4 class="h44">  20th Floor. Maurishka, Mangalore </h4><br>
+      <h4>Say hello:</h4>
+      <h4 class="h44">akshatha@gmail.com</h4>
+      <h4 class="h44">123-456-7890</h4>
+    </div>
+
+
+
+    <div class="container3">
+      <form action="booking.php" method="post">
+        <div class="form-group">
+          <label for="username" style="color:#19282F;">Username</label>
+          <input type="text" class="form-control bg-transparent" id="username" placeholder="Enter username" name="user">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="color:#19282F;">Event date</label>
+          <input type="date" class="form-control bg-transparent" id="exampleInputPassword1" placeholder="dd-mm-yyyy"name="date" >
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1"  style="color:#19282F;">Estimated guest count </label>
+          <input type="number" class="form-control bg-transparent" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0-200" name="count" >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"  style="color:#19282F;">Event budget</label>
+          <input type="number" class="form-control bg-transparent" id="exampleInputPassword1" min="50000" max="1000000"
+            placeholder="$" name="budget">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"  style="color:#19282F;">Destination</label>
+          <input type="text" class="form-control bg-transparent" id="exampleInputPassword1"
+            placeholder="Enter the destination" name="dest">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"  style="color:#19282F;">Event Type</label>
+          <select class="form-control bg-transparent" id="exampleFormControlSelect1" name="type">
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Concert</option>
+            <option>Social/Corporate</option>
+            <option>Other</option>
+          </select>
+        </div><br><br>
+        <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+      </form>
+      <script>
+        function myFunction() {
+          alert("Thank you for booking a event through our website\n We will email you shortly to confirm your booking")
+        }
+      </script>
+    </div>
+  </div>
+  <br><br><br><br><br> <br><br><br><br><br><br><br><br>
+
+  <!-- footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
